@@ -1,0 +1,6 @@
+<div class="ui checkbox">
+    <input type="checkbox" (change)="toggle()" [checked]=remind.done>
+    <label [ngClass]="{done: remind.done}">{{ remind.title + " " + getDate() }}</label>
+</div>
+
+<button type="button" class="ui red icon button" (click)="delete()"><i class="trash outline icon"></i></button>

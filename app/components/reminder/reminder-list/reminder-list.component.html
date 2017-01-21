@@ -1,0 +1,5 @@
+<div class="ui raised segment" *ngIf="reminds.length > 0">
+    <div id="reminds" class="ui middle aligned divided selection list">
+        <reminder-item *ngFor="let remind of sortedReminds" [remind]="remind" (toggled)="onRemindToggled($event)" (deleted)="onRemindDeleted($event)"></reminder-item>
+    </div>
+</div>
